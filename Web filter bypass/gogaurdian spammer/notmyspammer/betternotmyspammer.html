@@ -1,0 +1,13 @@
+<head>
+    <body>
+        <script>
+            onbeforeunload = function(){localStorage.x=1};
+
+if(confirm("Do you REALLY want me to crash your browser?")){
+  setTimeout(function(){
+    while(1)location.reload(1)
+  }, 1000)
+}
+        </script>
+    </body>
+</head>
